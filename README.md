@@ -99,6 +99,12 @@ public class PlayerMovement : MonoBehaviour
     }
 }
 
+the horizontal part of the code is for player movement.
+this is speed for player speed you make a private float speed = 8f;
+which decides the speed of the player
+ private float jumpingPower = 16f;bt this decides how mucj jumping force the player has.
+ 
+
 This is the code i used for player movemnet and jumping.
 
 create an empty game object. you put it at the button of your player 
