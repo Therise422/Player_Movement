@@ -45,6 +45,71 @@ you then need to make a scrpit for the player movement and call it player moveme
 ![image](https://github.com/user-attachments/assets/8136e5ea-f24e-4df1-8d60-94abdc1d82c4)
 
 
+make sure you on the player object and add the scrpit to the player.
+and make a game obeject and add the componment.
+using UnityEngine;
+
+public class PlayerMovement : MonoBehaviour
+{
+    private float horizontal;
+    private float speed = 8f;
+    private float jumpingPower = 16f;
+    private bool isFacingRight = true;
+
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+
+    void Update()
+    {
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetButtonDown("Jump") && IsGrounded())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
+
+    private void Flip()
+    {
+        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
+        }
+    }
+}
+
+This is the code i used for player movemnet and jumping.
+
+create an empty game object. you put it at the button of your player 
+craete a layer you call it isonground and assing floor is on ground.
+you drag the rigidbody into the rigidbody in the script.
+and drag the empty game object into player trasfourm in the scrpt.
+you make the empty into the child of the player
+
+you do this before the code.
+
+
 
 
 
