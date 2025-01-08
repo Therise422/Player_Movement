@@ -19,6 +19,12 @@ To make this you will go on the hierarchy, you right click on the hierarchy and 
 
 ![image](https://github.com/user-attachments/assets/35a33897-6631-47b2-96f5-f08c16985cdd)
 
+a bit of player movement while jumping 
+
+
+![image](https://github.com/user-attachments/assets/56afb6bc-b110-4250-a91d-eadae772264a)
+
+
 
 
 Then you will need to add a box collider to the squre,
