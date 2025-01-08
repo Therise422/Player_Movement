@@ -30,11 +30,22 @@ Then you will need to add a box collider to the squre,
 
 
 
-that the player will walk on, how ever you will need to make the platoform with a squre you will need to make the squre to a rectangle.
+that the player will walk on, however you will need to make the platoform with a squre you will need to make the squre to a rectangle.
 I made one platform and you will just copy it and paste it again change the name to platform 2.
-The total number of platforms is 2.
+The total number of platforms is 2, for the level.
 
-01405346
+
+to make the player
+then you go click on the hierarchy and you will go to 2d objects and spirte you can use triangle
+
+The triangle will be the player.
+
+you then need to make a scrpit for the player movement and call it player movement. and you drage the scrpit to add componet.
+
+![image](https://github.com/user-attachments/assets/8136e5ea-f24e-4df1-8d60-94abdc1d82c4)
+
+
+
 
 
 
