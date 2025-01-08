@@ -48,7 +48,7 @@ The triangle will be the player.
 
 you then need to make a scrpit for the player movement and call it player movement. and you drage the scrpit to add componet.
 
-![image](https://github.com/user-attachments/assets/8136e5ea-f24e-4df1-8d60-94abdc1d82c4)
+
 
 
 make sure you on the player object and add the scrpit to the player.
@@ -120,6 +120,9 @@ and drag the empty game object into player trasfourm in the scrpt.
 you make the empty into the child of the player
 
 you do this before the code.
+
+![image](https://github.com/user-attachments/assets/30544932-d9ad-46c7-8fbb-6dfeb37e589f)
+
 
 
 
